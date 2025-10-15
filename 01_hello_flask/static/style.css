@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #f7f7f7; padding: 2rem; }
+.container { max-width: 600px; margin: auto; background: white; padding: 2rem; border-radius: 12px; }
+form { margin-top: 1rem; display: flex; gap: .5rem; }
+input { flex: 1; padding: .5rem; }
+button { padding: .5rem 1rem; cursor: pointer; }
+a { display: inline-block; margin-top: 1rem; text-decoration: none; color: #3366cc; }

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello Flask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <main class="container">
+      <h1>Hello, Flask</h1>
+      <p>If you can read this, your app is running.</p>
+
+      <h2>Enter your name</h2>
+      <form action="/hello" method="POST">
+        <input type="text" name="username" placeholder="Your name" required>
+        <button type="submit">Say Hello</button>
+      </form>
+
+      <p>Or try visiting: <code>/hello/YourName</code> directly in the URL.</p>
+    </main>
+  </body>
+</html>
