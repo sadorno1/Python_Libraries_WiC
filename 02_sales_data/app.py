@@ -9,7 +9,8 @@ print("=== Preview ===")
 print(df.head())
 
 print("\n=== Summary Statistics ===")
-df.select_dtypes(include="number").describe()
+info = df.select_dtypes(include="number").describe()
+print(info)
 
 # 3. Group and aggregate (sales by region)
 grouped = df.groupby("region")["sales"].sum()
